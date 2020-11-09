@@ -1,0 +1,839 @@
+{
+	"spec": [
+		"./spec/**/*.spec.js"
+	],
+	"styles": [
+		"./styles/**/*.scss"
+	],
+	"sasslint": [
+		"./styles/**/*.scss"
+	],
+	"typedoc": [
+		"./src/**/*.ts"
+	],
+	"tslint": [
+		"./src/**/*.ts",
+		"!./src/**/*-model.d.ts"
+	],
+	"dedupe": [
+		"./src/**/*.ts",
+		"!./src/**/*.d.ts "
+	],
+	"blazorNamespace": {
+		"Grid": "sf-grid.js"
+	},
+	"blazorDependencies": {
+		"common": [],
+		"grid": {
+			"external": [
+				"data",
+				"popup",
+				"tooltip"
+			]
+		},
+		"pager": {}
+	},
+	"styleDependency": [
+		{
+			"pager": []
+		},
+		{
+			"excel-filter": [
+				"ej2-inputs/input",
+				"ej2-inputs/numerictextbox",
+				"ej2-buttons/button",
+				"ej2-buttons/radio-button",
+				"ej2-buttons/check-box",
+				"ej2-dropdowns/auto-complete",
+				"ej2-dropdowns/drop-down-list",
+				"ej2-popups/dialog",
+				"ej2-popups/spinner",
+				"ej2-calendars/datepicker",
+				"ej2-calendars/datetimepicker",
+				"ej2-navigations/context-menu"
+			]
+		},
+		{
+			"grid": [
+				"../pager",
+				"../excel-filter",
+				"ej2-inputs/input",
+				"ej2-inputs/numerictextbox",
+				"ej2-buttons/button",
+				"ej2-buttons/radio-button",
+				"ej2-buttons/check-box",
+				"ej2-dropdowns/auto-complete",
+				"ej2-dropdowns/drop-down-list",
+				"ej2-popups/dialog",
+				"ej2-popups/spinner",
+				"ej2-popups/tooltip",
+				"ej2-calendars/datepicker",
+				"ej2-calendars/datetimepicker",
+				"ej2-navigations/toolbar",
+				"ej2-navigations/context-menu"
+			]
+		}
+	],
+	"dependable": {
+		"grid": {
+			"classname": "Grid",
+			"dependencies": [
+				"ej2-base",
+				"ej2-data",
+				"ej2-inputs/form-validator,input,NumericTextBox,TextBox",
+				"ej2-navigations/ContextMenu,Toolbar",
+				"ej2-calendars/DatePicker,DateTimePicker,TimePicker",
+				"ej2-dropdowns/AutoComplete,DropDownList",
+				"ej2-popups",
+				"ej2-buttons/Button,CheckBox,RadioButton",
+				"ej2-excel-export",
+				"ej2-pdf-export",
+				"ej2-file-utils",
+				"ej2-compression",
+				"ej2-splitbuttons"
+			]
+		},
+		"pager": {
+			"classname": "Pager",
+			"dependencies": [
+				"ej2-base"
+			]
+		}
+	},
+	"components": [
+		"grid",
+		"pager"
+	],
+	"customWords": [
+		"init",
+		"retrives",
+		"retrive",
+		"datetimepickeredit",
+		"isVirtualAdaptive",
+		"uid",
+		"locator",
+		"accessor",
+		"ui",
+		"gui",
+		"raf",
+		"ctrl",
+		"alt",
+		"util",
+		"colgroup",
+		"globalize",
+		"un",
+		"ungroup",
+		"draggable",
+		"allpages",
+		"currentpage",
+		"rowdraganddrop",
+		"ungrouping",
+		"colspan",
+		"rowspan",
+		"droppable",
+		"onenter",
+		"filterbar",
+		"frag",
+		"filterbartitle",
+		"deselecting",
+		"deselects",
+		"ungroups",
+		"behaviour",
+		"datasource",
+		"datamanager",
+		"deselect",
+		"api",
+		"intl",
+		"selectionmode",
+		"tbody",
+		"printmode",
+		"groupable",
+		"querystring",
+		"truecount",
+		"falsecount",
+		"toolbar",
+		"pdf",
+		"params",
+		"excelexport",
+		"pdfexport",
+		"wordexport",
+		"virtualization",
+		"inline",
+		"stringedit",
+		"l10n",
+		"fieldname",
+		"booleanedit",
+		"dropdownedit",
+		"numericedit",
+		"templateedit",
+		"dropdown",
+		"ChooseColumns",
+		"SearchColumns",
+		"OKButton",
+		"CancelButton",
+		"NoMatchs",
+		"matchs",
+		"minWidth",
+		"maxWidth",
+		"columnchooser",
+		"Csvexport",
+		"csvexport",
+		"pagerdropdown",
+		"csv",
+		"xlsx",
+		"headerTemplate",
+		"captionTemplate",
+		"defaultedit",
+		"datepicker",
+		"datepickeredit",
+		"checkbox",
+		"unsort",
+		"filterbutton",
+		"clearbutton",
+		"startswith",
+		"EndsWidth",
+		"notequal",
+		"lessthan",
+		"greaterthan",
+		"lessthanorequal",
+		"greaterthanorequal",
+		"enthevalue",
+		"choosedate",
+		"endswith",
+		"selectvalue",
+		"hyperlink",
+		"Hyperlink",
+		"optr",
+		"guid",
+		"validator",
+		"adaptors",
+		"matchcase",
+		"asptype",
+		"aspignore",
+		"blazor",
+		"blazortype",
+		"aspdefaultvalueignore",
+		"blazordefaultvalueignore",
+		"blazordefaultvalue",
+		"isdetailgridalone",
+		"isdetail",
+		"patchadaptor",
+		"actionfailure",
+		"blazorproperty",
+		"autocomplete",
+		"inputmask",
+		"multiselect",
+		"timepicker",
+		"toggleswitch",
+		"combobox",
+		"searchsettings",
+		"isgenerictype",
+		"datetime",
+		"datetimepicker",
+		"hdr",
+		"autofill",
+		"clipMode",
+		"prev",
+		"headerValueAccessor",
+		"newheadername",
+		"showFilterBarOperator",
+		"dropdownlist",
+		"async",
+		"50ms"
+	],
+	"releasedVersion": "v17.2.48",
+	"changelogTypo": [
+		"Virtualization",
+		"Rollup",
+		"dialog",
+		"dropdown",
+		"optrui",
+		"filter-menu-operator",
+		"filtermenuoptrui",
+		"datamanager",
+		"truecount",
+		"falsecount",
+		"rowindex",
+		"AddRecord",
+		"toolbar",
+		"pdf",
+		"excelexport",
+		"pdfexport",
+		"wordexport",
+		"enum",
+		"rowselecting",
+		"args.cancel",
+		"postback",
+		"datasource",
+		"hideAtMedia",
+		"args.data",
+		"theme.header",
+		"theme.header",
+		"theme.caption",
+		"theme.record",
+		"border.color",
+		"border.dashStyle",
+		"borders.lineStyle",
+		"borders.color",
+		"ResetOnRowClick ",
+		"recordClick",
+		"Esc"
+	],
+	"coverageConfig": {
+		"src/pager/pager-dropdown.js": {
+			"branches": 76
+		},
+		"src/pager/numeric-container.js": {
+			"branches": 76
+		},
+		"src/pager/pager-message.js": {
+			"branches": 64
+		},
+		"src/grid/actions/page.js": {
+			"branches": 67,
+			"functions": 88,
+			"lines": 85,
+			"statements": 85
+		},
+		"src/pager/pager.js": {
+			"functions": 94,
+			"branches": 86
+		},
+		"src/grid/renderer/virtual-content-renderer.js": {
+			"branches": 59,
+			"functions": 86,
+			"statements": 67,
+			"lines": 71
+		},
+		"src/grid/renderer/caption-cell-renderer.js": {
+			"branches": 86
+		},
+		"src/grid/renderer/group-lazy-load-renderer.js": {
+			"branches": 2,
+			"functions": 10,
+			"statements": 9,
+			"lines": 8
+		},
+		"src/grid/renderer/virtual-freeze-renderer.js": {
+			"functions": 96
+		},
+		"src/grid/actions/infinite-scroll.js": {
+			"branches": 63,
+			"functions": 83,
+			"lines": 72,
+			"statements": 72
+		},
+		"src/grid/actions/lazy-load-group.js": {
+			"branches": 0,
+			"functions": 25,
+			"lines": 40,
+			"statements": 40
+		},
+		"src/grid/renderer/filter-cell-renderer.js": {
+			"branches": 83
+		},
+		"src/grid/renderer/summary-cell-renderer.js": {
+			"branches": 50,
+			"functions": 75,
+			"statements": 75,
+			"lines": 70
+		},
+		"src/grid/renderer/content-renderer.js": {
+			"functions": 77,
+			"branches": 59,
+			"statements": 60,
+			"lines": 60
+		},
+		"src/grid/renderer/header-renderer.js": {
+			"branches": 71,
+			"functions": 97
+		},
+		"src/grid/services/intersection-observer.js": {
+			"branches": 67,
+			"functions": 90
+		},
+		"src/grid/services/value-formatter.js": {
+			"statements": 88,
+			"branches": 86,
+			"lines": 88
+		},
+		"src/grid/actions/aggregate.js": {
+			"branches": 75,
+			"functions": 90,
+			"statements": 89,
+			"lines": 89
+		},
+		"src/grid/actions/scroll.js": {
+			"branches": 69,
+			"functions": 84,
+			"lines": 83,
+			"statements": 83
+		},
+		"src/grid/actions/column-menu.js": {
+			"branches": 80,
+			"functions": 80
+		},
+		"src/grid/actions/reorder.js": {
+			"branches": 50,
+			"functions": 75,
+			"statements": 75,
+			"lines": 70
+		},
+		"src/grid/actions/sort.js": {
+			"branches": 80,
+			"functions": 90
+		},
+		"src/grid/actions/detail-row.js": {
+			"functions": 70,
+			"branches": 70,
+			"statements": 88,
+			"lines": 88
+		},
+		"src/pager/external-message.js": {
+			"branches": 75,
+			"functions": 80
+		},
+		"src/grid/actions/virtual-scroll.js": {
+			"branches": 70,
+			"functions": 75,
+			"statements": 85,
+			"lines": 85
+		},
+		"src/grid/actions/column-chooser.js": {
+			"branches": 60,
+			"functions": 60,
+			"statements": 60,
+			"lines": 60
+		},
+		"src/grid/actions/command-column.js": {
+			"branches": 80
+		},
+		"src/grid/actions/row-reorder.js": {
+			"branches": 3.72,
+			"functions": 18,
+			"statements": 10,
+			"lines": 15
+		},
+		"src/grid/renderer/render.js": {
+			"functions": 76,
+			"branches": 60,
+			"statements": 63,
+			"lines": 70
+		},
+		"src/grid/renderer/command-column-renderer.js": {
+			"functions": 50,
+			"branches": 40
+		},
+		"src/grid/renderer/string-filter-ui.js": {
+			"branches": 49,
+			"functions": 70
+		},
+		"src/grid/renderer/boolean-filter-ui.js": {
+			"branches": 49,
+			"functions": 75
+		},
+		"src/grid/renderer/filter-menu-renderer.js": {
+			"branches": 60,
+			"functions": 88,
+			"statements": 80,
+			"lines": 80
+		},
+		"src/grid/renderer/dropdown-edit-cell.js": {
+			"statements": 83,
+			"branches": 50,
+			"lines": 83,
+			"functions": 80
+		},
+		"src/grid/renderer/date-filter-ui.js": {
+			"functions": 80,
+			"branches": 40
+		},
+		"src/grid/renderer/inline-edit-renderer.js": {
+			"branches": 0,
+			"functions": 0,
+			"statements": 0,
+			"lines": 0
+		},
+		"src/grid/actions/inline-edit.js": {
+			"branches": 0,
+			"functions": 0,
+			"statements": 0,
+			"lines": 0
+		},
+		"src/grid/actions/group.js": {
+			"branches": 58,
+			"statements": 70,
+			"lines": 70,
+			"functions": 65
+		},
+		"src/grid/actions/search.js": {
+			"statements": 80,
+			"lines": 80,
+			"branches": 65
+		},
+		"src/grid/actions/filter.js": {
+			"functions": 75,
+			"branches": 65
+		},
+		"src/grid/actions/excel-filter.js": {
+			"branches": 11,
+			"functions": 20,
+			"statements": 20,
+			"lines": 20
+		},
+		"src/grid/common/excel-filter-base.js": {
+			"branches": 11,
+			"functions": 20,
+			"statements": 20,
+			"lines": 20
+		},
+		"src/grid/actions/clipboard.js": {
+			"statements": 50,
+			"branches": 47,
+			"lines": 50,
+			"functions": 50
+		},
+		"src/grid/base/grid.js": {
+			"functions": 84,
+			"branches": 67,
+			"statements": 80,
+			"lines": 80
+		},
+		"src/grid/actions/checkbox-filter.js": {
+			"branches": 0,
+			"functions": 2,
+			"statements": 10,
+			"lines": 10
+		},
+		"src/grid/common/checkbox-filter-base.js": {
+			"branches": 0,
+			"functions": 2,
+			"statements": 10,
+			"lines": 10
+		},
+		"src/grid/renderer/filter-menu-operator.js": {
+			"branches": 45,
+			"functions": 85,
+			"statements": 80,
+			"lines": 80
+		},
+		"src/grid/renderer/freeze-renderer.js": {
+			"branches": 30,
+			"functions": 74,
+			"statements": 73,
+			"lines": 73
+		},
+		"src/grid/actions/resize.js": {
+			"functions": 90,
+			"branches": 84,
+			"statements": 89,
+			"lines": 88
+		},
+		"src/grid/renderer/cell-renderer.js": {
+			"branches": 50,
+			"statements": 50,
+			"lines": 50,
+			"functions": 50
+		},
+		"src/grid/renderer/header-cell-renderer.js": {
+			"branches": 75,
+			"statements": 75,
+			"lines": 75
+		},
+		"src/grid/actions/data.js": {
+			"branches": 75,
+			"functions": 80,
+			"statements": 70,
+			"lines": 70
+		},
+		"src/grid/actions/edit.js": {
+			"statements": 60,
+			"functions": 60,
+			"branches": 40,
+			"lines": 60
+		},
+		"src/grid/actions/normal-edit.js": {
+			"statements": 40,
+			"lines": 40,
+			"branches": 40,
+			"functions": 70
+		},
+		"src/grid/actions/show-hide.js": {
+			"branches": 63,
+			"statements": 82,
+			"functions": 83,
+			"lines": 85
+		},
+		"src/grid/actions/batch-edit.js": {
+			"statements": 10,
+			"functions": 10,
+			"branches": 10,
+			"lines": 10
+		},
+		"src/grid/services/focus-strategy.js": {
+			"branches": 60,
+			"functions": 65,
+			"statements": 60,
+			"lines": 65
+		},
+		"src/grid/services/aria-service.js": {
+			"functions": 80
+		},
+		"src/grid/base/util.js": {
+			"branches": 60,
+			"functions": 8,
+			"lines": 4,
+			"statements": 4
+		},
+		"src/grid/models/column.js": {
+			"functions": 50,
+			"branches": 50,
+			"statements": 80,
+			"lines": 80
+		},
+		"src/grid/models/row.js": {
+			"functions": 62,
+			"branches": 0,
+			"statements": 58,
+			"lines": 57
+		},
+		"src/grid/actions/excel-export.js": {
+			"branches": 0,
+			"functions": 0,
+			"statements": 0,
+			"lines": 0
+		},
+		"src/grid/actions/pdf-export.js": {
+			"branches": 0,
+			"functions": 0,
+			"statements": 0,
+			"lines": 0
+		},
+		"src/grid/actions/export-helper.js": {
+			"branches": 0,
+			"functions": 0,
+			"statements": 0,
+			"lines": 0
+		},
+		"src/grid/actions/context-menu.js": {
+			"branches": 84,
+			"functions": 90
+		},
+		"src/grid/actions/selection.js": {
+			"branches": 65,
+			"functions": 80,
+			"statements": 70,
+			"lines": 70
+		},
+		"src/grid/actions/dialog-edit.js": {
+			"branches": 65,
+			"functions": 80,
+			"statements": 70,
+			"lines": 70
+		},
+		"src/grid/actions/normal.edit.js": {
+			"branches": 40,
+			"functions": 40,
+			"statements": 40,
+			"lines": 40
+		},
+		"src/grid/renderer/expand-cell-renderer.js": {
+			"branches": 0,
+			"functions": 0,
+			"statements": 0,
+			"lines": 0
+		},
+		"src/grid/renderer/numeric-edit-cell.js": {
+			"branches": 0,
+			"functions": 0,
+			"statements": 0,
+			"lines": 0
+		},
+		"src/grid/renderer/datepicker-edit-cell.js": {
+			"branches": 0,
+			"functions": 0,
+			"statements": 0,
+			"lines": 0
+		},
+		"src/grid/renderer/edit-renderer.js": {
+			"branches": 40,
+			"functions": 78
+		},
+		"src/grid/renderer/batch-edit-renderer.js": {
+			"branches": 0,
+			"functions": 0,
+			"statements": 0,
+			"lines": 0
+		},
+		"src/grid/renderer/dialog-edit-renderer.js": {
+			"branches": 0,
+			"functions": 0,
+			"statements": 0,
+			"lines": 0
+		},
+		"src/grid/actions/toolbar.js": {
+			"branches": 70,
+			"statements": 81,
+			"lines": 81,
+			"functions": 96
+		},
+		"src/grid/renderer/boolean-edit-cell.js": {
+			"branches": 0,
+			"functions": 0,
+			"statements": 0,
+			"lines": 0
+		},
+		"src/grid/actions/print.js": {
+			"branches": 80
+		},
+		"src/grid/renderer/footer-renderer.js": {
+			"statements": 80,
+			"branches": 75
+		},
+		"src/grid/actions.js": {
+			"branches": 40
+		},
+		"src/grid/actions/foreign-key.js": {
+			"branches": 88
+		},
+		"src/grid/actions/blazor-action.js": {
+			"branches": 0,
+			"functions": 0,
+			"statements": 0,
+			"lines": 0
+		},
+		"src/grid/services/group-model-generator.js": {
+			"branches": 80,
+			"functions": 4,
+			"statements": 4,
+			"lines": 4
+		},
+		"src/grid/services/virtual-row-model-generator.js": {
+			"branches": 70,
+			"statements": 83,
+			"lines": 82
+		},
+		"src/grid/services/row-model-generator.js": {
+			"branches": 80
+		},
+		"src/grid/services/freeze-row-model-generator.js": {
+			"branches": 84
+		},
+		"src/grid/services/summary-model-generator.js": {
+			"branches": 88
+		},
+		"src/grid/services/width-controller.js": {
+			"branches": 78,
+			"functions": 40,
+			"statements": 40,
+			"lines": 40
+		},
+		"src/grid/actions/logger.js": {
+			"branches": 0,
+			"functions": 0,
+			"statements": 0,
+			"lines": 0
+		}
+	},
+	"locale": {
+		"grid": {
+			"EmptyRecord": "No records to display",
+			"True": "true",
+			"False": "false",
+			"InvalidFilterMessage": "Invalid Filter Data",
+			"GroupDropArea": "Drag a column header here to group its column",
+			"UnGroup": "Click here to ungroup",
+			"GroupDisable": "Grouping is disabled for this column",
+			"FilterbarTitle": "\"s filter bar cell",
+			"EmptyDataSourceError": "DataSource must not be empty at initial load since columns are generated from dataSource in AutoGenerate Column Grid",
+			"Add": "Add",
+			"Edit": "Edit",
+			"Cancel": "Cancel",
+			"Update": "Update",
+			"Delete": "Delete",
+			"Print": "Print",
+			"Pdfexport": "PDF Export",
+			"Excelexport": "Excel Export",
+			"Wordexport": "Word Export",
+			"Csvexport": "CSV Export",
+			"Search": "Search",
+			"Columnchooser": "Columns",
+			"Save": "Save",
+			"Item": "item",
+			"Items": "items",
+			"EditOperationAlert": "No records selected for edit operation",
+			"DeleteOperationAlert": "No records selected for delete operation",
+			"SaveButton": "Save",
+			"OKButton": "OK",
+			"CancelButton": "Cancel",
+			"EditFormTitle": "Details of ",
+			"AddFormTitle": "Add New Record",
+			"BatchSaveConfirm": "Are you sure you want to save changes?",
+			"BatchSaveLostChanges": "Unsaved changes will be lost. Are you sure you want to continue?",
+			"ConfirmDelete": "Are you sure you want to Delete Record?",
+			"CancelEdit": "Are you sure you want to Cancel the changes?",
+			"ChooseColumns": "Choose Column",
+			"SearchColumns": "search columns",
+			"Matchs": "No Matches Found",
+			"FilterButton": "Filter",
+			"ClearButton": "Clear",
+			"StartsWith": "Starts With",
+			"EndsWith": "Ends With",
+			"Contains": "Contains",
+			"Equal": "Equal",
+			"NotEqual": "Not Equal",
+			"LessThan": "Less Than",
+			"LessThanOrEqual": "Less Than Or Equal",
+			"GreaterThan": "Greater Than",
+			"GreaterThanOrEqual": "Greater Than Or Equal",
+			"ChooseDate": "Choose a Date",
+			"EnterValue": "Enter the value",
+			"Copy": "Copy",
+			"Group": "Group by this column",
+			"Ungroup": "Ungroup by this column",
+			"autoFitAll": "Auto Fit all columns",
+			"autoFit": "Auto Fit this column",
+			"Export": "Export",
+			"FirstPage": "First Page",
+			"LastPage": "Last Page",
+			"PreviousPage": "Previous Page",
+			"NextPage": "Next Page",
+			"SortAscending": "Sort Ascending",
+			"SortDescending": "Sort Descending",
+			"EditRecord": "Edit Record",
+			"DeleteRecord": "Delete Record",
+			"FilterMenu": "Filter",
+			"SelectAll": "Select All",
+			"Blanks": "Blanks",
+			"FilterTrue": "True",
+			"FilterFalse": "False",
+			"NoResult": "No Matches Found",
+			"ClearFilter": "Clear Filter",
+			"NumberFilter": "Number Filters",
+			"TextFilter": "Text Filters",
+			"DateFilter": "Date Filters",
+			"DateTimeFilter": "DateTime Filters",
+			"MatchCase": "Match Case",
+			"Between": "Between",
+			"CustomFilter": "Custom Filter",
+			"CustomFilterPlaceHolder": "Enter the value",
+			"CustomFilterDatePlaceHolder": "Choose a date",
+			"AND": "AND",
+			"OR": "OR",
+			"ShowRowsWhere": "Show rows where:"
+		},
+		"pager": {
+			"currentPageInfo": "{0} of {1} pages",
+			"totalItemsInfo": "({0} items)",
+			"firstPageTooltip": "Go to first page",
+			"lastPageTooltip": "Go to last page",
+			"nextPageTooltip": "Go to next page",
+			"previousPageTooltip": "Go to previous page",
+			"nextPagerTooltip": "Go to next pager",
+			"previousPagerTooltip": "Go to previous pager",
+			"pagerDropDown": "Items per page",
+			"pagerAllDropDown": "Items",
+			"All": "All"
+		}
+	}
+}

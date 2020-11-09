@@ -1,0 +1,17 @@
+dist/
+public/
+coverage/
+shelljs_*
+styles/css/
+src/**/*.js
+spec/**/*.js
+test-report/
+node_modules/
+src/**/*.d.ts
+spec/**/*.d.ts
+styles/**/*.css
+styles/**/*.scss
+!styles/**/_*.scss
+demos/**/*.js
+helpers/**/*.js
+helpers/**/*.d.ts
