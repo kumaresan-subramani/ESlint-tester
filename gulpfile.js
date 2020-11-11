@@ -1,1 +1,1 @@
-require("@syncfusion/ej2-build");
+require("@syncfusion/ej2-build-check");
